@@ -1,0 +1,16 @@
+<p> Para el registro solicitado <b>{{camada}}</b> los datos son: </p>
+
+{% if cursos%}
+
+<ul>
+{% for curso in cursos %}
+    <li> {{curso.nombre}} </li>
+    <li> {{curso.camada}} </li>
+{% endfor %}
+
+</ul>
+{% else %}
+<p> No existen resultados </p>
+
+
+{% endif %}
